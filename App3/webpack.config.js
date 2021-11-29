@@ -12,7 +12,7 @@ module.exports = {
         path: path.resolve(__dirname, "./dist")
     },
     devServer: {
-        port: 8002
+        port: 8003
     },
     module: {
         rules: [{
@@ -32,9 +32,9 @@ module.exports = {
         }),
         new ModuleFederationPlugin({
             filename: "remoteEntry.js",
-            name: "app2",
+            name: "app3",
             exposes: {
-                "./Body": "./src/components/Body.vue"
+                "./Footer": "./src/components/Footer.vue"
             },
             // shared: require("./package.json").dependencies,
         })

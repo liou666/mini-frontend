@@ -1,9 +1,9 @@
 <template>
   <div>
-      <h1>
-        App1 header
+      <h1>App2 Body ：
+          <slot></slot>
       </h1>
-      <hr/>
+  <hr/>
   </div>
 </template>
 

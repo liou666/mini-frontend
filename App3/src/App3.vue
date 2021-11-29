@@ -1,14 +1,14 @@
 <template>
     <div>
-        App2
-        <Body/>
+        App3
+        <Footer/>
     </div>
 </template>
 
 <script>
-import Body from "./components/Body.vue"
+import Footer from "./components/Footer.vue"
 export default {
-    components:{Body}
+    components:{Footer}
 }
 </script>
 

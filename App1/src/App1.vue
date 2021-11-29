@@ -2,7 +2,9 @@
     <div>
         App1
         <Header/>
-        <RemoteHeader/>
+        <app-2>动态加载</app-2>
+        <app-3/>
+        <RemoteBody>静态加载</RemoteBody>
     </div>
 </template>
 
@@ -11,7 +13,7 @@ import Header from "./components/Header.vue"
 export default {
     components:{
         Header,
-        RemoteHeader:()=>import("app2/Header")//必须采用异步导入方式
+        RemoteBody:()=>import("app2/Body")//必须采用异步导入方式
     }
 }
 </script>

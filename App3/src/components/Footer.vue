@@ -1,7 +1,10 @@
 <template>
-  <h1>
-      App2 header
-  </h1>
+  <div>
+    <h1>
+      App3 Footer
+    </h1>
+  <hr/>
+  </div>
 </template>
 
 <script>

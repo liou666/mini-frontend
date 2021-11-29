@@ -1,0 +1,25 @@
+{
+  "name": "app1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@babel/core": "^7.16.0",
+    "babel-loader": "^8.2.3",
+    "html-webpack-plugin": "^5.5.0",
+    "vue": "^2.6.14",
+    "vue-loader": "^15.9.8",
+    "vue-template-compiler": "^2.6.14",
+    "webpack": "^5.64.4",
+    "webpack-cli": "^4.0.0",
+    "webpack-dev-server": "^3.11.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "npx webpack serve",
+    "build": "webpack"
+  },
+  "author": "",
+  "license": "ISC"
+}
