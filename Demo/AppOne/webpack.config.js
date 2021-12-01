@@ -5,11 +5,14 @@ const {
     ModuleFederationPlugin
 } = require("webpack").container
 module.exports = {
+
     mode: "development",
     devtool: "source-map",
     entry: "./src/main.js",
     output: {
-        path: path.resolve(__dirname, "./dist")
+        path: path.resolve(__dirname, "./dist"),
+        publicPath: "auto",
+        uniqueName: 'AppOne', //避免多个webpack运行时产生的冲突
     },
     devServer: {
         port: 8001

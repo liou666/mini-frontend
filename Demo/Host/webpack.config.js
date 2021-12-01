@@ -9,7 +9,10 @@ module.exports = {
     devtool: "source-map",
     entry: "./src/main.js",
     output: {
-        path: path.resolve(__dirname, "./dist")
+        path: path.resolve(__dirname, "./dist"),
+        publicPath: "auto",
+        uniqueName: 'Host',
+
     },
     devServer: {
         port: 8004

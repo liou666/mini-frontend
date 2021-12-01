@@ -3,13 +3,12 @@ export default async function (options) {
         router
     } = options;
 
+    let target = router.options.routes.find(x => x.name === "Home")
     let routesOfAppTwo = [{
-        path: "/body",
+        path: "body",
         name: "Body",
         component: () => import("./components/Body.vue"),
     }];
 
-    console.log("AppTwo", router);
-
-    router.options.routes.push(...routesOfAppTwo)
+    target.children.push(...routesOfAppTwo)
 }

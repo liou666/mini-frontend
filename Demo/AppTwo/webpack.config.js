@@ -9,7 +9,9 @@ module.exports = {
     devtool: "source-map",
     entry: "./src/main.js",
     output: {
-        path: path.resolve(__dirname, "./dist")
+        path: path.resolve(__dirname, "./dist"),
+        publicPath: "auto",
+        uniqueName: 'AppTwo', //避免多个webpack运行时产生的冲突
     },
     devServer: {
         port: 8002
